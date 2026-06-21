@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 
 public class clienteBase extends JFrame {
 
-    private static final String ENDPOINT = "http://localhost:5100/solicitudes";
+    private static final String ENDPOINT = "http://localhost:8080/solicitudes";
 
     private final tipoC Cliente;
 
