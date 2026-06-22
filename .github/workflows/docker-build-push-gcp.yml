@@ -29,5 +29,5 @@ jobs:
 
       - name: Construir y subir servicio web
         run: |
-          docker build -t ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sistemas-distribuidos/servicio-web:v1 .
-          docker push ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sistemas-distribuidos/servicio-web:v1
+          docker build -t ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sistemas-distribuidos/servicio-web:v2 .
+          docker push ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sistemas-distribuidos/servicio-web:v2
