@@ -39,7 +39,7 @@ public class servidorAtencion {
     public static void main(String[] args) throws Exception {
         iniciarAgentes();
 
-        HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress("0.0.0.0", port), 0);
 
         server.createContext("/solicitudes", servidorAtencion::handleSolicitudes);
         server.createContext("/status", servidorAtencion::handleStatus);
