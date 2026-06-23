@@ -8,8 +8,10 @@ import java.net.http.*;
 import java.nio.charset.StandardCharsets;
 
 public class clienteBase extends JFrame {
-
-    private static final String ENDPOINT = "http://localhost:8080/solicitudes";
+    
+    //private static final String ENDPOINT = "https://servicio-web-sd-bgerb6cndac4b3gn.canadacentral-01.azurewebsites.net/solicitudes"; //Azure
+    //private static final String ENDPOINT = "https://cr-servicio-web-sd-850678681976.us-central1.run.app/solicitudes"; //GOOGLE
+    private static final String ENDPOINT = "http://3.92.88.69:8081/solicitudes"; //AWS
 
     private final tipoC Cliente;
 
