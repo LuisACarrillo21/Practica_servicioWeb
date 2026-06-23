@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.LongAdder;
 
 public class servidorAtencion {
 
-    private static final int PORT = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));;
+    private static final int PORT = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
     private static final int AGENTES_POR_ASUNTO = 10;
 
     private static final BlockingQueue<solicitud> colaProblemas = new LinkedBlockingQueue<>();
